@@ -1,9 +1,6 @@
 {
-  "builds": [
-    { "src": "dist/spa/**", "use": "@vercel/static" }
-  ],
-  "routes": [
-    { "src": "/(.*)", "dest": "/index.html" }
-  ],
-  "outputDirectory": "dist/spa"
+  "outputDirectory": "dist/spa",
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
 }
